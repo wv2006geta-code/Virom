@@ -1,83 +1,64 @@
  <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VIROM – Remonty mieszkań</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VIROM – Remonty wnętrz</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: #ff7a00;
-      color: #fff;
-      padding: 30px 15px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-    }
-    header p {
-      margin-top: 10px;
-      font-size: 18px;
-    }
-    .container {
-      max-width: 900px;
-      margin: 20px auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-    }
-    h2 {
-      color: #ff7a00;
-      text-align: center;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    .buttons a {
-      display: block;
-      text-align: center;
-      margin: 10px 0;
-      padding: 14px;
-      background: #ff7a00;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-    .buttons a:hover {
-      background: #e66b00;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 10px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-    }
-    form button {
-      width: 100%;
-      padding: 14px;
-      background: #ff7a00;
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      font-weight: bold;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      color: #777;
-    }
-  </style>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+header {
+  background: #ff7a00;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+}
+nav {
+  background: #222;
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+section {
+  max-width: 900px;
+  background: #fff;
+  margin: 15px auto;
+  padding: 20px;
+}
+h2 {
+  color: #ff7a00;
+}
+ul {
+  padding-left: 20px;
+}
+.buttons a {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 12px 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.whatsapp { background: #25D366; }
+.telegram { background: #0088cc; }
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+</style>
 </head>
 
 <body>
@@ -87,13 +68,22 @@
   <p>Wewnętrzne remonty mieszkań, domów i biur</p>
 </header>
 
-<div class="container">
+<nav>
+  <a href="#about">O nas</a>
+  <a href="#services">Zakres usług</a>
+  <a href="#contact">Kontakt</a>
+</nav>
+
+<section id="about">
   <h2>O nas</h2>
   <p>
     Zajmujemy się kompleksowymi remontami wnętrz mieszkań, domów i biur.
-    Gwarantujemy solidne wykonanie, terminowość i indywidualne podejście do klienta.
+    Gwarantujemy solidne wykonanie, terminowość oraz indywidualne podejście
+    do każdego klienta.
   </p>
+</section>
 
+<section id="services">
   <h2>Zakres usług</h2>
   <ul>
     <li>Remonty mieszkań</li>
@@ -102,29 +92,30 @@
     <li>Prace wykończeniowe</li>
     <li>Adaptacje wnętrz</li>
   </ul>
+</section>
 
+<section id="contact">
   <h2>Kontakt</h2>
-  <p><strong>Telefon:</strong> +48 736 117 111</p>
-  <p><strong>Email:</strong> wv2006geta@gmail.com</p>
+
+  <p><strong>📩 Napisz do nas</strong></p>
 
   <div class="buttons">
-    <a href="https://wa.me/48736117111" target="_blank">WhatsApp</a>
-    <a href="https://t.me/" target="_blank">Telegram</a>
-    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+    <a class="whatsapp" href="https://wa.me/48736117111" target="_blank">
+      WhatsApp
+    </a>
+    <a class="telegram" href="https://t.me/wv2006geta" target="_blank">
+      Telegram
+    </a>
   </div>
 
-  <h2>Napisz do nas</h2>
-  <form action="mailto:wv2006geta@gmail.com" method="post" enctype="text/plain">
-    <input type="text" name="name" placeholder="Twoje imię" required>
-    <input type="email" name="email" placeholder="Twój email" required>
-    <textarea name="message" placeholder="Twoja wiadomość" rows="5" required></textarea>
-    <button type="submit">Wyślij</button>
-  </form>
-</div>
+  <p>
+    📞 +48 736 117 111<br>
+    ✉️ wv2006geta@gmail.com
+  </p>
+</section>
 
 <footer>
-  © 2025 VIROM – Remonty w Polsce
+  © VIROM
 </footer>
 
 </body>
