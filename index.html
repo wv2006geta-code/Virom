@@ -5,52 +5,30 @@
     <title>VIROM – Remonty wnętrz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            color: #333;
-        }
-        header {
-            background: #ff7a00;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        section {
-            padding: 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-        h2 {
-            color: #ff7a00;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        .buttons {
-            margin: 20px 0;
-            text-align: center;
-        }
+        body { margin:0; font-family:Arial, sans-serif; background:#f5f5f5; color:#333; }
+        header { background:#ff7a00; color:#fff; padding:22px; text-align:center; }
+        section { padding:22px; max-width:1000px; margin:auto; }
+        h2 { color:#ff7a00; }
+        ul { padding-left:20px; }
+        .buttons { margin:22px 0; text-align:center; }
         .btn {
-            display: inline-block;
-            margin: 10px;
-            padding: 15px 20px;
-            background: #ff7a00;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
+            display:inline-block; margin:10px; padding:14px 22px;
+            background:#ff7a00; color:#fff; text-decoration:none;
+            border-radius:6px; font-weight:bold;
         }
-        .btn:hover {
-            background: #e56c00;
+        .btn:hover { background:#e56c00; }
+        .grid {
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+            gap:15px;
         }
-        footer {
-            background: #222;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
+        .card {
+            background:#fff; border-radius:8px; overflow:hidden;
+            box-shadow:0 2px 6px rgba(0,0,0,.1);
         }
+        .card img { width:100%; display:block; }
+        .card p { margin:0; padding:10px; font-size:14px; }
+        footer { background:#222; color:#fff; padding:20px; text-align:center; }
     </style>
 </head>
 <body>
@@ -78,6 +56,26 @@
         <li>Prace wykończeniowe</li>
         <li>Adaptacje wnętrz</li>
     </ul>
+</section>
+
+<section id="portfolio">
+    <h2>Realizacje</h2>
+    <p>Przykładowe realizacje naszych prac remontowych:</p>
+
+    <div class="grid">
+        <div class="card">
+            <img src="images/1.jpg" alt="Remont mieszkania">
+            <p>Remont mieszkania – salon</p>
+        </div>
+        <div class="card">
+            <img src="images/2.jpg" alt="Remont kuchni">
+            <p>Remont kuchni</p>
+        </div>
+        <div class="card">
+            <img src="images/3.jpg" alt="Remont łazienki">
+            <p>Remont łazienki</p>
+        </div>
+    </div>
 </section>
 
 <section id="contact">
